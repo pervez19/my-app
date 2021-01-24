@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Router, NavigationStart } from '@angular/router';
-import { Alert, AlertType } from '@app/_models/alert';
-import { AlertService } from '@app/_services/alert.service';
+import { Alert, AlertType } from '../../_models/alert';
+import { AlertService } from '../../_services/alert.service';
 import { Subscription } from 'rxjs';
 
 

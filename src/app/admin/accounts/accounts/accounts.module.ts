@@ -6,7 +6,7 @@ import { AccountsRoutingModule } from '../accounts-routing/accounts-routing.modu
 import { ListComponent } from '../list/list.component';
 import { EditComponent } from '../edit/edit.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { SortByPipe } from '@app/_shared/sort-by.pipe';
+import { SortByPipe } from '../../../_shared/sort-by.pipe';
 @NgModule({
   imports: [
       CommonModule,

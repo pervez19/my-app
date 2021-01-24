@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
-import { AccountService } from '@app/_services/account.service';
-import { AlertService } from '@app/_services/alert.service';
+import { AccountService } from '../../../_services/account.service';
+import { AlertService } from '../../../_services/alert.service';
 import { first } from 'rxjs/operators';
 
 @Component({

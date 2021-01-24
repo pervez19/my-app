@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Role } from '@app/_models/role.enum';
-import { AccountService } from '@app/_services/account.service';
+import { Role } from '../../../_models/role.enum';
+import { AccountService } from '../../../_services/account.service';
 import { first } from 'rxjs/operators';
 
 @Component({
