@@ -4,9 +4,9 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { BehaviorSubject, Observable } from 'rxjs';
 import { map, tap } from 'rxjs/operators';
 
-import { environment } from 'src/environments/environment';
-import { User } from '../_models/user';
+import { User } from '@app/_models/user';
 import { Role } from '@app/_models/role.enum';
+import { environment } from '@environments/environment';
 
 @Injectable({
   providedIn: 'root'
