@@ -1,0 +1,15 @@
+<div class="app-container" [ngClass]="{ 'bg-light': user }">
+
+  <nav class="navbar navbar-expand navbar-dark bg-dark" *ngIf="user">
+      <div class="navbar-nav">
+          <a appHighlight routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="nav-item nav-link">Home</a>
+          <a appHighlight routerLink="/profile" routerLinkActive="active" class="nav-item nav-link">Profile</a>
+          <a appHighlight *ngIf="user.role === Role.Admin" routerLink="/admin" routerLinkActive="active" class="nav-item nav-link">  Admin</a>
+          <a  (click)="logout()" class="nav-item nav-link">Logout</a>
+      </div>
+  </nav>
+
+   <app-alert></app-alert>
+  <router-outlet></router-outlet>
+</div>
+<!--*ngIf="user.role === Role.Admin" -->
